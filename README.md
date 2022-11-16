@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+# General Immersion Day - CDK sample
 
-This is a blank project for CDK development with TypeScript.
+This is a sample project for General Immersion Day. This is not full sample of the workshop but something that you can reference during the workshop to see how it could be done with AWS Cloud Development Kit.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Deploy
 
-## Useful commands
+To deploy this project you can use, for example, AWS CloudShell. Navigate to CloudShell service and clone to project from Github and deploy with CDK.
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+- `git clone https://github.com/juhala-aws/general-immersion-day-cdk-sample.git`
+- `cd general-immersion-day-sample`
+- `npm install`
+- `npx cdk synth`
+- `npx cdk deploy`
