@@ -143,6 +143,7 @@ export class GeneralImmersionDayStack extends cdk.Stack {
       engine: rds.DatabaseClusterEngine.auroraMysql({ version: rds.AuroraMysqlEngineVersion.VER_2_08_1 }),
       credentials: rds.Credentials.fromSecret(secret),
       defaultDatabaseName: 'immersionday',
+      instances: 1,
       instanceProps: {
         instanceType: ec2.InstanceType.of(ec2.InstanceClass.BURSTABLE2, ec2.InstanceSize.SMALL),
         vpcSubnets: vpc.selectSubnets({subnetGroupName: 'Private'}),
